@@ -74,7 +74,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-/*========/COMPONENTS========*/
+
 
 
 /*========HEADER========*/
@@ -162,7 +162,7 @@ body {
 .phone-number:focus {
     color:var(--pressed-state-color);
 }
-/*========/HEADER========*/
+
 
 
 /*========HERO========*/
@@ -205,7 +205,6 @@ body {
 .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
-
 }
 .benefits-list {
     display: flex; 
@@ -227,8 +226,7 @@ body {
     line-height: 1.1;
 }
 .work-list {
-    display: flex;
-    
+    display: flex;  
 }
 .work-item:not(:last-child) {
     margin-right: 24px;
@@ -245,13 +243,9 @@ body {
 .team-list {
     display: flex;
 }
-.team-item {
-   
-    
-}
+
 .team-item:not(:last-child) {
     margin-right: 24px; 
-
 }
 .content {
     text-align: center;
@@ -278,7 +272,7 @@ body {
     font-size: 16px;
     line-height: 1.5; 
 }
-/*========/FOOTER========*/
+
 
 
 
@@ -294,7 +288,6 @@ body {
     display: flex;
    justify-content: center;
    margin-bottom: 72px;
-
 }
 
 .filter-item:not(:last-child) {
@@ -322,7 +315,6 @@ body {
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    
     gap: 24px;
 }
 
