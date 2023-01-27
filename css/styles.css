@@ -64,6 +64,7 @@ body {
 
 /*========COMPONENTS========*/
 .section-title {
+    margin-bottom: 8px;
     color: var(--dark-color);
     font-weight: 500;
     font-size: 20px;
@@ -183,6 +184,7 @@ body {
     margin-top: 48px;
     padding: 16px 32px;
     border-radius: 4px;
+    border: transparent;
     color: var(--white-color);
     background: var(--primary-brand-color);
     font-family: inherit;
@@ -196,43 +198,82 @@ body {
 .hero-btn:focus {
     background: var(--pressed-state-color);
 }
-/*========/HERO========*/
+
 
 
 /*========SECTION BENEFITS========*/
-.benefits-list {
-    display: flex;
+.benefits {
     padding-top: 120px;
     padding-bottom: 120px;
+
+}
+.benefits-list {
+    display: flex; 
 }
 .benefits-item:not(:last-child) {
     margin-right: 24px;
 }
-/*========/SECTION BENEFITS========*/
+
 
 /*========SECTION WORK========*/
-.section-main-title {
-        color: var(--dark-color);
-        font-size: 36px;
-        line-height: 1.1;
+.work {
+    padding-bottom: 120px;
 }
-.work-list {}
-/*========/SECTION WORK========*/
+.section-main-title {
+    text-align: center;
+    margin-bottom: 72px;
+    color: var(--dark-color);
+    font-size: 36px;
+    line-height: 1.1;
+}
+.work-list {
+    display: flex;
+    
+}
+.work-item:not(:last-child) {
+    margin-right: 24px;
+}
+
 
 
 /*========SECTION TEAM========*/
 .team {
-background: var(--light-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: var(--light-color);
 }
-/*========/SECTION TEAM========*/
+.team-list {
+    display: flex;
+}
+.team-item {
+   
+    
+}
+.team-item:not(:last-child) {
+    margin-right: 24px; 
+
+}
+.content {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color:var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
 
 
 
 /*========FOOTER========*/
 .page-footer {
-background: var(--dark-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    background: var(--dark-color);
 }
 .footer-description {
+    margin-top: 16px;
+    padding-right: 864px;
     color: var(--accent-color); 
     font-size: 16px;
     line-height: 1.5; 
@@ -245,8 +286,24 @@ background: var(--dark-color);
 
 
 /*PORTFOLIO*/
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.filter-list {
+    display: flex;
+   justify-content: center;
+   margin-bottom: 72px;
 
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 24px;
+}
 .filter-btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: transparent;
     color: var(--primary-brand-color);
     background: var(--light-color);
     font-family: inherit;
@@ -261,4 +318,19 @@ background: var(--dark-color);
     color: var(--white-color);
     background: var(--pressed-state-color);
 }
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 24px;
+}
+
+.card-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 15px;
+    border: 1px solid #E7E9FC;
+}
+
 
