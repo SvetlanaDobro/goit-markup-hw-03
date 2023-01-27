@@ -4,8 +4,44 @@
 .link {
     text-decoration: none;
 }
-.hide-title {
-    display: none;}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 :root {
     --primary-font: 'Roboto', 'sans-serif';
@@ -42,12 +78,21 @@ body {
 
 /*========HEADER========*/
 .page-header {
-    background: var(--white-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background:var(--white-color);   
 }
-.page-nav {}
+.page-header-menu {   
+   display: flex;
+    justify-content: space-between;
+}
+.page-nav {  
+    display: flex;  
+}
 
 /*logo*/
 .logo {
+    margin-right: 76;
     font-family:  var(--secondary-text);
     font-size: 18px;
     letter-spacing: 0.03em;
@@ -56,6 +101,7 @@ body {
     color: var(--primary-brand-color);   
 }
 .logo-header {
+    
     color: var(--dark-color);
     line-height: 1.33;
 }
@@ -66,9 +112,14 @@ body {
 
 
 /*Menu-nav*/
-.menu-nav {}
-.menu-item {}
-
+.menu-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 76px;  
+}
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
 .menu-link {
     color: var(--dark-color);
     font-weight: 500;
@@ -81,6 +132,14 @@ body {
 }
 
 /*address*/
+.address-list {
+    display: flex; 
+}
+
+.address-list>.address-item+.address-item {
+    margin-left: 40px;
+}
+
 .modal-btn{
     color: var(--primary-text-color);
     font-size: 16px;
@@ -106,14 +165,24 @@ body {
 
 
 /*========HERO========*/
-.hero {}
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-left: 473;
+    padding-left: 473;
+    text-align: center;
+    background: var(--dark-color);
+}
 .hero-title {
     color: var(--white-color);
-    background: var(--dark-color); 
+     
     font-size: 56px;
     line-height: 1.07;
 }        
 .hero-btn {
+    margin-top: 48px;
+    padding: 16px 32px;
+    border-radius: 4px;
     color: var(--white-color);
     background: var(--primary-brand-color);
     font-family: inherit;
@@ -131,6 +200,14 @@ body {
 
 
 /*========SECTION BENEFITS========*/
+.benefits-list {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.benefits-item:not(:last-child) {
+    margin-right: 24px;
+}
 /*========/SECTION BENEFITS========*/
 
 /*========SECTION WORK========*/
