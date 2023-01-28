@@ -79,20 +79,26 @@ body {
 
 /*========HEADER========*/
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     background:var(--white-color);   
 }
+.page-header-portfolio {
+border: 1px solid#E7E9FC;
+}
+
 .page-header-menu {   
    display: flex;
+   align-items: center;
     justify-content: space-between;
 }
 .page-nav {  
-    display: flex;  
+    display: flex;
+    align-items: center;
 }
 
 /*logo*/
 .logo {
+    
     margin-right: 76;
     font-family:  var(--secondary-text);
     font-size: 18px;
@@ -118,10 +124,17 @@ body {
     align-items: center;
     margin-left: 76px;  
 }
+.menu-item {
+    
+}
 .menu-item:not(:last-child) {
     margin-right: 40px;
 }
 .menu-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
     color: var(--dark-color);
     font-weight: 500;
     font-size: 16px;
@@ -154,9 +167,9 @@ body {
 
 .phone-number {
     color:var(--primary-text-color); 
-        font-size: 16px;
-        line-height: 1.5;
-        font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: normal;
 }
 .phone-number:hover,
 .phone-number:focus {
@@ -169,12 +182,16 @@ body {
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    padding-left: 473;
-    padding-left: 473;
     text-align: center;
+
     background: var(--dark-color);
 }
+
+
 .hero-title {
+    width: 494px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--white-color);
      
     font-size: 56px;
@@ -266,8 +283,9 @@ body {
     background: var(--dark-color);
 }
 .footer-description {
+    width: 264px;
     margin-top: 16px;
-    padding-right: 864px;
+    
     color: var(--accent-color); 
     font-size: 16px;
     line-height: 1.5; 
